@@ -15,15 +15,50 @@ Requirements:
   - awk, perl and sed
   - outside of tmux, `$TERM` must be set to `xterm-256color`
 
+Installing zsh, oh-my-zsh, vim, tmux, and other
+
+```
+$ apt-get install powerline zsh vim tmux python3-pip mc git htop -y
+
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/4gordi/ohmyzsh/master/tools/install.sh)"
+$ git clone https://github.com/4gordi/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+$ git clone https://github.com/4gordi/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+
+$ export PATH=/home/gordi/.local/bin:$PATH
+
+$ pip3 install pyserver ipython virtualenv virtualenvwrapper python-math pillow jmespath tqdm flask pandas sqlalchemy arrow 
+```
+
+After install all packeges, we need download Powerline and patched Fonts
+
+```
+$ pip3 install git+git://github.com/Lokaltog/powerline
+$ cd
+$ wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+$ wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+$ mv PowerlineSymbols.otf /usr/share/fonts/
+$ fc-cache -vf /usr/share/fonts/
+$ mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+$ pip3 show powerline-status
+```
+Add some string to .bashrc:
+
+```
+$ echo '
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. /usr/share/powerline/bindings/bash/powerline.sh' >>~/.bashrc
+```
 To install, run the following from your terminal: (you may want to backup your
 existing `~/.tmux.conf` first)
 
 ```
 $ git clone https://github.com/4gordi/tmux.git /path/to/oh-my-tmux
 $ cp /path/to/oh-my-tmux/.tmux.conf ~/.tmux.conf
+$ cp /path/to/oh-my-tmux/.zshrc ~/.zshrc
 $ cp /path/to/oh-my-tmux/.vimrc ~/.vimrc
 $ rm -rf /path
 ```
-
 
 
