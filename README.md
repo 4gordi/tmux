@@ -54,11 +54,13 @@ To install, run the following from your terminal: (you may want to backup your
 existing `~/.tmux.conf` first)
 
 ```
-$ git clone https://github.com/4gordi/tmux.git /path/to/oh-my-tmux
-$ cp /path/to/oh-my-tmux/.tmux.conf ~/.tmux.conf
-$ cp /path/to/oh-my-tmux/.zshrc ~/.zshrc
-$ cp /path/to/oh-my-tmux/.vimrc ~/.vimrc
-$ rm -rf /path
+$ git clone https://github.com/4gordi/tmux.git ~/oh-my-tmux
+$ cp ~/oh-my-tmux/.tmux.conf ~/.tmux.conf
+$ cp ~/oh-my-tmux/.zshrc ~/.zshrc
+$ cp ~/oh-my-tmux/.vimrc ~/.vimrc
+$ cp ~/oh-my-tmux/python.plugin.zsh /home/gordi/.oh-my-zsh/plugins/python/python.plugin.zsh
+$ cd
+$ rm -rf /oh-my-tmux
 ```
 
 
