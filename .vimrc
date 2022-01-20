@@ -25,18 +25,18 @@ set ffs=unix,dos,mac
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 call plug#begin()
 Plug 'junegunn/vim-easy-align'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+            \ Plug 'ryanoasis/vim-devicons'
 Plug 'tomasr/molokai'
 Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'frazrepo/vim-rainbow'
 Plug 'altercation/vim-colors-solarized'
-Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'myusuf3/numbers.vim'
 Plug 'junegunn/vim-emoji'
 Plug 'terryma/vim-smooth-scroll'
 Plug 'https://github.com/ap/vim-css-color'
-Plug 'ryanoasis/vim-devicons'
 Plug 'jupyter-vim/jupyter-vim'
 call plug#end()
 nmap <F6> :NERDTreeToggle<CR>
