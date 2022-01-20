@@ -28,6 +28,9 @@ Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tomasr/molokai'
+Plug 'mattn/emmet-vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'frazrepo/vim-rainbow'
 Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'myusuf3/numbers.vim'
 Plug 'junegunn/vim-emoji'
@@ -36,4 +39,16 @@ Plug 'https://github.com/ap/vim-css-color'
 Plug 'ryanoasis/vim-devicons'
 Plug 'jupyter-vim/jupyter-vim'
 call plug#end()
-nmap <F6> :NERDTreeToggle<CR>" >>~/.vimrc
+nmap <F6> :NERDTreeToggle<CR>
+
+let g:rainbow_active = 1
+
+let g:rainbow_load_separately = [
+    \ [ '*' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+    \ [ '*.tex' , [['(', ')'], ['\[', '\]']] ],
+    \ [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+    \ [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],
+    \ ]
+
+let g:rainbow_guifgs = ['RoyalBlue3', 'DarkOrange3', 'DarkOrchid3', 'FireBrick']
+let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
