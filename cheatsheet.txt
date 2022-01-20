@@ -1,0 +1,77 @@
+sudo apt-get update
+sudo apt-get --purge remove 
+
+py		Runs python
+ipy		Runs the appropriate ipython version according to the activated virtualenv
+pyfind		Finds .py files recursively in the current directory
+pyclean [dirs]	Deletes byte-code and cache files from a list of directories or the current one
+pygrep <text>	Looks for text in *.py files in the current directory, recursively
+pyuserpaths	Add user site-packages folders to PYTHONPATH, for Python 2 and 3
+pyserv		Starts an HTTP server on the current directory (use --directory for a different one)
+mkv [name]	Make a new virtual environment called name (default: venv) in current directory.
+vrun [name]	Activate virtual environment called name (default: venv) in current directory.
+pipreq		Create requirements file
+pipir		Install packages from requirements.txt file
+pipupall	Update all installed packages
+pipunall	Uninstall all installed packages
+
+echo $PATH
+which python3
+which pip3
+which python
+which pip
+python --version
+pip --version
+
+pip3 list
+pip3 freeze --local > requirements.txt
+pip3 freezee > requirements.txt
+pip3 install -r requirements.txt
+
+mkvirtualenv new_name_env
+mkproject new_name_prjct
+workon или 
+lsvirtualenv
+rmvirtualenv new_name_env
+cpvirtualenv old_name_env new_name_env
+source new_name_env/bin/activate или new_name_env\Scripts\activate.bat
+deactivate
+
+ta	tmux attach -t		Attach new tmux session to already running named session
+tad	tmux attach -d -t	Detach named tmux session
+ts	tmux new-session -s	Create a new named tmux session
+tl	tmux list-sessions	Displays a list of running tmux sessions
+tksv	tmux kill-server	Terminate all running tmux sessions
+tkss	tmux kill-session -t	Terminate named running tmux session
+tmux	_zsh_tmux_plugin_run	Start a new tmux session
+Ctrl+b = <C-b>
+C-b, $			rename session
+C-b, s			list of sessions
+C-b, d			detach, but not closed current sessions
+C-b, m			mouse mode
+C-b, c			new window
+C-b, w			list of windows
+C-b, ,			rename current window
+C-b, &			kill current window
+C-b, f			find window
+C-b, n			next window
+C-b, p			previous window
+C-b, [space]		toggle between layouts
+C-b, %	или C-b, _	vertical split panel
+C-b, "	или C-b, -	horizontal split panel
+C-b, q			show number of panel
+C-b, x			kill current panel
+C-b, z			zoom panel and back
+C-b, +			open current panel into window
+C-b, ?			help commands
+C-b, :			command mode
+C-b, t			clock
+
+
+[esc]	 	переключение режима vim
+:q!		выход из vim без сохранения
+:w new_name 	выход из vim с сохранением файла под именем new_name
+
+
+wslconfig /u Ubuntu-20.04
+
