@@ -21,6 +21,8 @@ existing `~/.tmux.conf` first)
 ```
 $ git clone https://github.com/4gordi/tmux.git /path/to/oh-my-tmux
 $ cp /path/to/oh-my-tmux/.tmux.conf ~/.tmux.conf
+$ cp /path/to/oh-my-tmux/.vimrc ~/.vimrc
+$ rm -rf /path
 ```
 
 
