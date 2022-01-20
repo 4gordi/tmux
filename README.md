@@ -59,13 +59,15 @@ existing `~/.tmux.conf` first)
 ```
 $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/4gordi/vim-plug/master/plug.vim
 $ curl https://cli-assets.heroku.com/install.sh | sh
+
 $ git clone https://github.com/4gordi/tmux.git ~/oh-my-tmux
 $ cp ~/oh-my-tmux/.tmux.conf ~/.tmux.conf
 $ cp ~/oh-my-tmux/.zshrc ~/.zshrc
 $ cp ~/oh-my-tmux/.vimrc ~/.vimrc
 $ cp ~/oh-my-tmux/python.plugin.zsh /home/gordi/.oh-my-zsh/plugins/python/python.plugin.zsh
+
 $ cd
-$ rm -rf /oh-my-tmux
+$ rm -rf oh-my-tmux
 ```
 Open vim and type `:PlugInstall` and `:q`
 
