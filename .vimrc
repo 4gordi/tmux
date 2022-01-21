@@ -39,6 +39,7 @@ endif
 """"""""""" END of PowerLine Settings  """""""""""""""
 
 syntax enable                           
+set mouse=a
 
 set t_Co=256
 colorscheme molokai
