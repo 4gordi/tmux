@@ -6,7 +6,6 @@ Plug 'junegunn/vim-easy-align'
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin' |
             \ Plug 'ryanoasis/vim-devicons'
-Plug 'majutsushi/tagbar'
 Plug 'kien/ctrlp.vim'
 Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
@@ -78,23 +77,6 @@ set hlsearch
 set ffs=unix,dos,mac
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
-"=====================================================
-"" Tabs / Buffers settings
-"=====================================================
-tab sball
-set switchbuf=useopen
-set laststatus=2
-nmap <F9> :bprev<CR>
-nmap <F10> :bnext<CR>
-nmap <silent> <leader>q :SyntasticCheck # <CR> :bp <BAR> bd #<CR>
-
-"=====================================================
-"" TagBar settings
-"=====================================================
-let g:tagbar_autofocus=0
-let g:tagbar_width=42
-autocmd BufEnter *.py :call tagbar#autoopen(0)
-autocmd BufWinLeave *.py :TagbarClose
 
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']     " Ignore files in NERDTree
 let NERDTreeWinSize=40
