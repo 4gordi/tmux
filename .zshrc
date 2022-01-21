@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias mkv='mkvirtualenv'
 alias da='deactivate'
-alisa mkpr='mkproject'
+alias mkpr='mkproject'
 
 # Virtualenvwrapper settings:
 export WORKON_HOME=$HOME/.virtualenvs
