@@ -88,3 +88,5 @@ Reboot system or input
 ```
 $ p10k configure
 ```
+
+bash -c "$(wget -qO- https://git.io/vQgMr)"
