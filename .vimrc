@@ -16,7 +16,6 @@ Plug 'flazz/vim-colorschemes'
 Plug 'myusuf3/numbers.vim'
 Plug 'terryma/vim-smooth-scroll'
 Plug 'https://github.com/ap/vim-css-color'
-Plug 'jupyter-vim/jupyter-vim'
 call plug#end()
 
 """""""""""" Start Powerline Settings """"""""""""""""
