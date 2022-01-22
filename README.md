@@ -32,22 +32,22 @@ $ pip3 install pyserver ipython virtualenv virtualenvwrapper python-math pillow 
 After install all packeges, we need download Powerline and patched Fonts
 
 ```
-$ pip3 install git+git://github.com/Lokaltog/powerline
-$ cd
-$ mkdir projects
+pip3 install git+git://github.com/Lokaltog/powerline
+cd
+mkdir projects
 
-$ wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-$ wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 
-$ mv PowerlineSymbols.otf /usr/share/fonts/
-$ fc-cache -vf /usr/share/fonts/
-$ mv 10-powerline-symbols.conf /etc/fonts/conf.d/
-$ pip3 show powerline-status
+mv PowerlineSymbols.otf /usr/share/fonts/
+fc-cache -vf /usr/share/fonts/
+mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+pip3 show powerline-status
 ```
 Add some string to .bashrc:
 
 ```
-$ echo '
+echo '
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
@@ -57,24 +57,24 @@ To install, run the following from your terminal: (you may want to backup your
 existing `~/.tmux.conf` first)
 
 ```
-$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/4gordi/vim-plug/master/plug.vim
-$ curl https://cli-assets.heroku.com/install.sh | sh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/4gordi/vim-plug/master/plug.vim
+curl https://cli-assets.heroku.com/install.sh | sh
 
-$ git clone https://github.com/4gordi/tmux.git ~/oh-my-tmux
-$ cp ~/oh-my-tmux/.tmux.conf ~/.tmux.conf
-$ cp ~/oh-my-tmux/.zshrc ~/.zshrc
-$ cp ~/oh-my-tmux/.vimrc ~/.vimrc
-$ cp ~/oh-my-tmux/python.plugin.zsh /home/gordi/.oh-my-zsh/plugins/python/python.plugin.zsh
+git clone https://github.com/4gordi/tmux.git ~/oh-my-tmux
+cp ~/oh-my-tmux/.tmux.conf ~/.tmux.conf
+cp ~/oh-my-tmux/.zshrc ~/.zshrc
+cp ~/oh-my-tmux/.vimrc ~/.vimrc
+cp ~/oh-my-tmux/python.plugin.zsh /home/gordi/.oh-my-zsh/plugins/python/python.plugin.zsh
 
-$ cd
-$ rm -rf oh-my-tmux
+cd
+rm -rf oh-my-tmux
 ```
 Open vim and type `:PlugInstall` and `:q`
 
 If you want `Powerlevel10k` Theme for ZSH:
 
 ```
-$ git clone --depth=1 https://github.com/4gordi/powerlevel10k.git ~/powerlevel10k
+git clone --depth=1 https://github.com/4gordi/powerlevel10k.git ~/powerlevel10k
 ```
 
 Open `~/.zshrc` and add strings:
@@ -86,7 +86,7 @@ POWERLEVEL9K_MODE="nerdfont-complete"
 Reboot system or input 
 
 ```
-$ p10k configure
+p10k configure
 ```
 
 bash -c "$(wget -qO- https://git.io/vQgMr)"
