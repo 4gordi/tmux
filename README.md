@@ -74,7 +74,7 @@ Open vim and type `:PlugInstall` and `:q`
 If you want `Powerlevel10k` Theme for ZSH:
 
 ```
-git clone --depth=1 https://github.com/4gordi/powerlevel10k.git ~/powerlevel10k
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
 
 Open `~/.zshrc` and add strings:
